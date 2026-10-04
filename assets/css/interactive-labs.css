@@ -1,0 +1,478 @@
+/* ===================================================================
+   INTERACTIVE LABS & LIVE SIMULATORS STYLES
+   =================================================================== */
+
+.labs-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.labs-tabs-nav {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.lab-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.lab-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.lab-tab-btn.active {
+  background: rgba(0, 245, 212, 0.12);
+  border-color: var(--primary-glow);
+  color: var(--primary-glow);
+  box-shadow: var(--glow-sm);
+}
+
+.lab-tab-btn svg {
+  font-size: 1.1rem;
+}
+
+.lab-panel {
+  display: none;
+  animation: fadeInPanel 0.4s ease;
+}
+
+.lab-panel.active {
+  display: block;
+}
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------------------------------
+   LAB 1: SKYDEPLOY S3 COST OPTIMIZER SIMULATOR
+   ------------------------------------------- */
+.s3-sim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.sim-controls-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.slider-val-badge {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary-glow);
+  background: rgba(0, 245, 212, 0.1);
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-glow);
+}
+
+.cyber-slider {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-pill);
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.cyber-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary-glow);
+  box-shadow: 0 0 10px var(--primary-glow);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.cyber-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.sim-results-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cost-comparison-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.cost-box {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cost-box.standard {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.cost-box.optimized {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.cost-box-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.cost-box-val {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.cost-box.optimized .cost-box-val {
+  color: #34d399;
+}
+
+.savings-highlight-banner {
+  background: linear-gradient(135deg, rgba(0, 245, 212, 0.15), rgba(0, 187, 249, 0.1));
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.savings-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.savings-amount {
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--primary-glow);
+  text-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+  margin: 4px 0;
+}
+
+.savings-note {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.policy-preview-code {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #a5f3fc;
+  max-height: 140px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+/* -------------------------------------------
+   LAB 2: DISK SCHEDULING VISUALIZER
+   ------------------------------------------- */
+.disk-sim-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.disk-config-bar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.disk-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.disk-input-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.disk-algo-select {
+  padding: 10px 14px;
+  background: rgba(16, 24, 39, 0.9);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.disk-algo-select:focus {
+  outline: none;
+  border-color: var(--primary-glow);
+}
+
+.disk-track-canvas-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  position: relative;
+}
+
+.track-scale-axis {
+  position: relative;
+  height: 24px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.scale-tick {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.disk-canvas-area {
+  position: relative;
+  height: 180px;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 245, 212, 0.04) 0%, transparent 70%);
+  border-radius: var(--radius-md);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+#disk-seek-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.disk-metrics-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.disk-stat-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.disk-stat-num {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-glow);
+}
+
+.disk-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+/* -------------------------------------------
+   LAB 3: CYBERSHIELD AI THREAT SCANNER
+   ------------------------------------------- */
+.ai-sim-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+}
+
+.ai-query-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sample-prompts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sample-prompt-pill {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+  line-height: 1.4;
+}
+
+.sample-prompt-pill:hover {
+  background: rgba(0, 245, 212, 0.08);
+  border-color: var(--border-glow);
+  color: #fff;
+  transform: translateX(4px);
+}
+
+.ai-output-terminal {
+  background: #05070c;
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--font-mono);
+  min-height: 380px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.terminal-badge-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+.engine-pill {
+  font-size: 0.74rem;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.engine-pill::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.threat-level-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.threat-level-badge.low {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.threat-level-badge.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.ai-stream-content {
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  overflow-y: auto;
+  max-height: 280px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 900px) {
+  .s3-sim-grid {
+    grid-template-columns: 1fr;
+  }
+  .ai-sim-container {
+    grid-template-columns: 1fr;
+  }
+  .disk-metrics-results {
+    grid-template-columns: 1fr;
+  }
+}

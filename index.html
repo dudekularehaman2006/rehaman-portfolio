@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dudekula Rehaman | Computer Science & Engineering • Cloud, DevOps & Systems</title>
+  <meta name="description" content="Portfolio of Dudekula Rehaman - Core Computer Science & Engineering (CSE) Student, Cloud Architect & Full-Stack Developer. Open for all Software Engineering, Cloud, Backend & Systems opportunities.">
+  <meta name="keywords" content="Dudekula Rehaman, Computer Science, CSE, Cloud Computing, AWS, DevOps, Python, C++, Boto3, Flask, LPU">
+  <meta name="author" content="Dudekula Rehaman">
+
+  <!-- Favicon / Brand SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307090e'/><text x='50%' y='65%' font-family='sans-serif' font-weight='900' font-size='50' fill='%2300f5d4' text-anchor='middle'>DR</text></svg>">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/cyber-theme.css">
+  <link rel="stylesheet" href="assets/css/interactive-labs.css">
+  <link rel="stylesheet" href="assets/css/terminal.css">
+</head>
+<body>
+
+  <!-- Interactive Background Canvas & CRT Scanline -->
+  <canvas id="particle-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-scanline"></div>
+  <div class="bg-radial-glow"></div>
+
+  <!-- ==========================================
+       TOP NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="brand-symbol">DR</div>
+        <div>
+          <span class="brand-title">Dudekula Rehaman</span>
+          <span class="brand-role">Core CSE & Systems</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item"><a href="#philosophy">Philosophy</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#labs">Live Labs</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Terminal Pill -->
+        <button class="terminal-pill-btn open-terminal-btn" title="Open Interactive Cyber Terminal (Hotkey: ~)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+          <span>CLI</span>
+          <span class="terminal-key-badge">~</span>
+        </button>
+
+        <!-- Sound FX Toggle -->
+        <button class="icon-btn" id="sound-toggle-btn" title="Toggle Sound FX">
+          <svg id="sound-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 5L6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="theme-toggle-btn" title="Cycle Theme (Cyan / Emerald / Violet)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- Direct Resume Download Button -->
+        <a href="https://drive.google.com/uc?export=download&id=1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x" target="_blank" class="btn-primary-glow" title="Direct Download PDF Resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot-pulse"></span>
+              <span>Available for Software Engineering & Cloud Roles</span>
+            </div>
+
+            <div class="hero-greeting">&lt;HELLO WORLD_ /&gt;</div>
+
+            <h1 class="hero-name">Dudekula Rehaman</h1>
+
+            <div class="hero-role-wrapper">
+              <span>I architect & build</span>
+              <span class="typewriter-text" id="typewriter-text"></span>
+            </div>
+
+            <p class="hero-bio">
+              <strong>Core Computer Science and Engineering (CSE)</strong> scholar at Lovely Professional University, actively open for all software engineering, cloud, backend, and systems roles. Experienced in <strong>AWS Cloud Architecture, Boto3 automation, Python/C++, Flask backends, and DevOps workflows</strong>. Passionate about building high-efficiency scalable software and robust algorithmic systems.
+            </p>
+
+            <div class="hero-actions">
+              <!-- Primary Direct Download -->
+              <a href="https://drive.google.com/uc?export=download&id=1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x" target="_blank" class="resume-download-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <!-- Secondary View Online -->
+              <a href="https://drive.google.com/file/d/1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x/view?usp=sharing" target="_blank" class="resume-view-alt" title="Preview on Google Drive">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>View Drive Doc</span>
+              </a>
+
+              <!-- Terminal Trigger -->
+              <button class="btn-outline-glow open-terminal-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                <span>Launch CLI [~]</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Hologram Badge -->
+          <div class="hero-card-perspective">
+            <div class="hero-holo-card" id="hero-holo-card">
+              <div class="card-shine" id="card-shine"></div>
+
+              <div class="holo-header">
+                <div class="holo-brand">
+                  <span>SYS://CREDENTIAL_ID</span>
+                </div>
+                <div class="holo-chip"></div>
+              </div>
+
+              <div class="holo-avatar-block">
+                <div class="holo-avatar-wrap">
+                  <div class="holo-avatar-inner">DR</div>
+                </div>
+                <div>
+                  <h3 class="holo-meta-name">Dudekula Rehaman</h3>
+                  <div class="holo-meta-specialization">CORE COMPUTER SCIENCE & ENGINEERING</div>
+                  <div class="holo-meta-univ">Lovely Professional University</div>
+                </div>
+              </div>
+
+              <div class="holo-specs-grid">
+                <div class="holo-spec-item">
+                  <span class="holo-spec-label">Academic CGPA</span>
+                  <span class="holo-spec-val accent">7.95 / 10.0</span>
+                </div>
+                <div class="holo-spec-item">
+                  <span class="holo-spec-label">Cloud Training</span>
+                  <span class="holo-spec-val">CloudCraft AWS</span>
+                </div>
+                <div class="holo-spec-item">
+                  <span class="holo-spec-label">Primary Stack</span>
+                  <span class="holo-spec-val accent">Python, C++, AWS</span>
+                </div>
+                <div class="holo-spec-item">
+                  <span class="holo-spec-label">Domain Scope</span>
+                  <span class="holo-spec-val">Open For All Roles</span>
+                </div>
+              </div>
+
+              <div class="holo-footer">
+                <div>PUNJAB / ANDHRA PRADESH, INDIA • +91 8688803746</div>
+                <div class="holo-barcode">||| | |||| | ||</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Metrics HUD Bar -->
+        <div class="metrics-hud">
+          <div class="metric-card">
+            <div class="metric-icon">☁️</div>
+            <div class="metric-data">
+              <span class="metric-number">4+</span>
+              <span class="metric-label">Production Architectures</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">🛡️</div>
+            <div class="metric-data">
+              <span class="metric-number">50+</span>
+              <span class="metric-label">Security AI Benchmarks</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-data">
+              <span class="metric-number">O(n log n)</span>
+              <span class="metric-label">Algorithmic Scheduling</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">🎯</div>
+            <div class="metric-data">
+              <span class="metric-number">7.95</span>
+              <span class="metric-label">B.Tech CSE Honours CGPA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HOW I THINK (ENGINEERING PHILOSOPHY)
+         ========================================== -->
+    <section class="section-wrapper" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Architectural Mindset</div>
+          <h2 class="section-title">How I Think & Build Systems</h2>
+          <p class="section-subtitle">
+            Beyond writing raw syntax, exceptional engineering is defined by rigorous systems architecture, cost-efficiency, and bulletproof security hygiene.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          
+          <div class="philosophy-card">
+            <div class="philosophy-icon-wrap">🛡️</div>
+            <h3 class="philosophy-title">Zero-Trust Security by Design</h3>
+            <p class="philosophy-desc">
+              Perimeter security is obsolete. I build every service under the assumption that external networks are hostile. Enforcing AWS IAM least privilege, granular role delegation, encryption in transit and at rest, and input sanitation at every boundary.
+            </p>
+            <div class="philosophy-tags">
+              <span class="p-tag">IAM Least Privilege</span>
+              <span class="p-tag">Zero-Trust</span>
+              <span class="p-tag">Phishing Mitigation</span>
+              <span class="p-tag">Data Protection</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon-wrap">☁️</div>
+            <h3 class="philosophy-title">Cost-Engineered Cloud Architecture</h3>
+            <p class="philosophy-desc">
+              High performance shouldn't mean runaway AWS bills. Through automated Boto3 lifecycle routines and intelligent storage tiering, historical versions transition seamlessly from Standard to Glacier, achieving up to 70% storage cost reduction while guaranteeing instant recovery.
+            </p>
+            <div class="philosophy-tags">
+              <span class="p-tag">AWS S3 Lifecycle</span>
+              <span class="p-tag">Boto3 Automation</span>
+              <span class="p-tag">Cost Analytics</span>
+              <span class="p-tag">Resource Sizing</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon-wrap">⚙️</div>
+            <h3 class="philosophy-title">Algorithmic Rigor & Low-Level Insight</h3>
+            <p class="philosophy-desc">
+              Deep understanding of OS internals and scheduling theory (FCFS, SSTF, SCAN, C-SCAN) translates directly into building scalable distributed backend systems. Analyzing I/O bottleneck trade-offs and latency variance ensures consistent throughput under heavy load.
+            </p>
+            <div class="philosophy-tags">
+              <span class="p-tag">O(n log n) Complexity</span>
+              <span class="p-tag">OS Kernel Concepts</span>
+              <span class="p-tag">Throughput Optimization</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon-wrap">🚀</div>
+            <h3 class="philosophy-title">Decoupled Resilience & Production CI/CD</h3>
+            <p class="philosophy-desc">
+              Microservice decoupling isolates blast radiuses. Deploying frontend clients to static CDNs (GitHub Pages) and stateless API proxies to containerized platforms (Render/Docker) guarantees high uptime, graceful error degradation, and frictionless automated deployment pipelines.
+            </p>
+            <div class="philosophy-tags">
+              <span class="p-tag">Docker Containers</span>
+              <span class="p-tag">CI/CD Pipelines</span>
+              <span class="p-tag">Rate Limiting</span>
+              <span class="p-tag">Graceful Failover</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION
+         ========================================== -->
+    <section class="section-wrapper" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Production Showcase</div>
+          <h2 class="section-title">Engineered Solutions & Systems</h2>
+          <p class="section-subtitle">
+            Core projects solving enterprise cloud storage management, AI threat defense, and operating systems performance optimization.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: SkyDeploy -->
+          <div class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-tag">Cloud Infrastructure</span>
+                <span class="project-date">July 2026</span>
+              </div>
+              <h3 class="project-title">SkyDeploy – AWS S3 Lifecycle & Versioning Cost Optimizer</h3>
+              <p class="project-summary">
+                Full-stack AWS cloud storage management platform with 7 core features designed to minimize cloud expenditures through automated policy optimization and version management.
+              </p>
+              <ul class="project-highlights-list">
+                <li>Integrated S3 Versioning via Boto3 to track version IDs and execute instant rollbacks.</li>
+                <li>Engineered 5-metric financial dashboard tracking file counts, storage, and projected savings.</li>
+                <li>Deployed with AWS IAM security policies for production-grade role delegation.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">AWS S3</span>
+                <span class="tech-badge">Boto3</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Bootstrap 5</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="deepdive-btn open-deepdive-btn" data-project="skydeploy">
+                <span>System Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="https://github.com/dudekularehaman2006" target="_blank" class="ext-btn" title="Inspect on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: CyberShield AI -->
+          <div class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-tag">AI & Cybersecurity</span>
+                <span class="project-date">April 2026</span>
+              </div>
+              <h3 class="project-title">CyberShield AI – Intelligent Security Assistant</h3>
+              <p class="project-summary">
+                Full-stack cybersecurity advisory assistant powered by the Groq LLaMA 3.1 ultra-low latency inference API, delivering real-time phishing detection and threat mitigation.
+              </p>
+              <ul class="project-highlights-list">
+                <li>Connected frontend, Flask API, and Groq AI through a decoupled 3-layer architecture.</li>
+                <li>Production deployment via CI/CD pipeline: React on GitHub Pages + Flask on Render.</li>
+                <li>Benchmarked with 50+ cybersecurity queries with latency and response tracking.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">Groq LLaMA 3.1</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Render CI/CD</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="deepdive-btn open-deepdive-btn" data-project="cybershield">
+                <span>System Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="https://github.com/dudekularehaman2006" target="_blank" class="ext-btn" title="Inspect on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Disk Scheduling Simulator -->
+          <div class="project-card">
+            <div>
+              <div class="project-top-meta">
+                <span class="project-tag">Systems & OS Algorithms</span>
+                <span class="project-date">February 2026</span>
+              </div>
+              <h3 class="project-title">Advanced Disk Scheduling Simulator</h3>
+              <p class="project-summary">
+                Interactive benchmarking and visualization platform implementing 4 core disk scheduling algorithms (FCFS, SSTF, SCAN, and C-SCAN) to evaluate seek times and throughput.
+              </p>
+              <ul class="project-highlights-list">
+                <li>O(n log n) algorithmic optimization logic with exact cylinder seek time calculations.</li>
+                <li>Dynamic visualization with customizable disk sizes, head positions, and request sequences.</li>
+                <li>Side-by-side comparative analytics interface tailored for OS systems benchmarking.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript (ES6+)</span>
+                <span class="tech-badge">Data Structures</span>
+                <span class="tech-badge">OS Scheduling</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="deepdive-btn open-deepdive-btn" data-project="disksim">
+                <span>System Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="https://github.com/dudekularehaman2006" target="_blank" class="ext-btn" title="Inspect on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         LIVE INTERACTIVE LABS & SIMULATORS
+         ========================================== -->
+    <section class="section-wrapper" id="labs">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Interactive Testbeds</div>
+          <h2 class="section-title">Live Systems & Engineering Labs</h2>
+          <p class="section-subtitle">
+            Interact with live playable versions of my engineered projects right inside your browser. Adjust parameters, trigger simulations, and observe real-time algorithmic outputs.
+          </p>
+        </div>
+
+        <div class="labs-container">
+          
+          <!-- Tabs Navigation -->
+          <div class="labs-tabs-nav">
+            <button class="lab-tab-btn active" data-target="lab-s3">
+              <span>☁️</span>
+              <span>1. SkyDeploy S3 Cost Optimizer</span>
+            </button>
+            <button class="lab-tab-btn" data-target="lab-disksim">
+              <span>💿</span>
+              <span>2. Disk Scheduling Visualizer</span>
+            </button>
+            <button class="lab-tab-btn" data-target="lab-cybershield">
+              <span>🛡️</span>
+              <span>3. CyberShield AI Threat Scanner</span>
+            </button>
+          </div>
+
+          <!-- TAB 1: S3 COST OPTIMIZER SIMULATOR -->
+          <div class="lab-panel active" id="lab-s3">
+            <div class="s3-sim-grid">
+              
+              <div class="sim-controls-card">
+                <div class="slider-group">
+                  <div class="slider-label-row">
+                    <span class="slider-label">Active Storage Volume (GB)</span>
+                    <span class="slider-val-badge" id="val-s3-storage">5,000 GB</span>
+                  </div>
+                  <input type="range" class="cyber-slider" id="s3-storage-slider" min="500" max="50000" step="500" value="5000">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label-row">
+                    <span class="slider-label">Retained Object Versions</span>
+                    <span class="slider-val-badge" id="val-s3-versions">6 versions</span>
+                  </div>
+                  <input type="range" class="cyber-slider" id="s3-versions-slider" min="1" max="15" step="1" value="6">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label-row">
+                    <span class="slider-label">Glacier Transition Window (Days)</span>
+                    <span class="slider-val-badge" id="val-s3-days">30 days</span>
+                  </div>
+                  <input type="range" class="cyber-slider" id="s3-days-slider" min="30" max="180" step="15" value="30">
+                </div>
+
+                <div>
+                  <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 6px;">
+                    Generated AWS Boto3 Lifecycle Rule:
+                  </div>
+                  <pre class="policy-preview-code" id="s3-policy-code"></pre>
+                  <button class="btn-outline-glow" id="copy-policy-btn" style="width: 100%; margin-top: 10px; font-size: 0.8rem; justify-content: center;">
+                    <span>📋 Copy Policy JSON</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="sim-results-card">
+                <div>
+                  <div class="cost-comparison-display">
+                    <div class="cost-box standard">
+                      <span class="cost-box-title">Unmanaged S3 Cost</span>
+                      <span class="cost-box-val" id="s3-standard-cost">$690.00/mo</span>
+                      <span style="font-size: 0.72rem; color: var(--text-dim);">All versions in Standard</span>
+                    </div>
+
+                    <div class="cost-box optimized">
+                      <span class="cost-box-title">SkyDeploy Tiered Cost</span>
+                      <span class="cost-box-val" id="s3-optimized-cost">$205.00/mo</span>
+                      <span style="font-size: 0.72rem; color: #34d399;">Glacier Flexible Lifecycle</span>
+                    </div>
+                  </div>
+
+                  <div class="savings-highlight-banner">
+                    <div class="savings-title">Automated Optimization Yield</div>
+                    <div class="savings-amount" id="s3-savings-percent">70% SAVED</div>
+                    <div class="savings-note" id="s3-annual-savings">+$5,820 / year projected savings</div>
+                  </div>
+                </div>
+
+                <div style="font-size: 0.82rem; color: var(--text-dim); line-height: 1.5; border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+                  💡 <strong>Engineering Insight:</strong> SkyDeploy automates AWS S3 Lifecycle policies by archiving non-current versions to Glacier after threshold days, drastically reducing per-gigabyte costs while preserving version IDs for zero-data-loss rollback.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: DISK SCHEDULING VISUALIZER -->
+          <div class="lab-panel" id="lab-disksim">
+            <div class="disk-sim-container">
+              
+              <div class="disk-config-bar">
+                <div class="disk-input-wrap">
+                  <label class="disk-input-label">Initial Head Position (0-199)</label>
+                  <input type="number" id="disk-head-input" class="form-input" style="padding: 10px;" value="50" min="0" max="199">
+                </div>
+
+                <div class="disk-input-wrap" style="flex: 2;">
+                  <label class="disk-input-label">Request Cylinders (comma-separated)</label>
+                  <input type="text" id="disk-requests-input" class="form-input" style="padding: 10px;" value="82, 170, 43, 140, 24, 16, 190">
+                </div>
+
+                <div class="disk-input-wrap">
+                  <label class="disk-input-label">Scheduling Algorithm</label>
+                  <select id="disk-algo-select" class="disk-algo-select">
+                    <option value="FCFS">FCFS (First Come First Served)</option>
+                    <option value="SSTF" selected>SSTF (Shortest Seek Time First)</option>
+                    <option value="SCAN">SCAN (Elevator Algorithm)</option>
+                    <option value="C-SCAN">C-SCAN (Circular SCAN)</option>
+                  </select>
+                </div>
+
+                <button class="btn-primary-glow" id="run-disk-btn" style="height: 42px;">
+                  <span>Run Simulation</span>
+                </button>
+              </div>
+
+              <div class="disk-track-canvas-card">
+                <div class="track-scale-axis">
+                  <span class="scale-tick" style="left: 0%;">0</span>
+                  <span class="scale-tick" style="left: 25%;">50</span>
+                  <span class="scale-tick" style="left: 50%;">100</span>
+                  <span class="scale-tick" style="left: 75%;">150</span>
+                  <span class="scale-tick" style="left: 100%;">199</span>
+                </div>
+
+                <div class="disk-canvas-area">
+                  <canvas id="disk-seek-canvas"></canvas>
+                </div>
+
+                <div class="disk-metrics-results">
+                  <div class="disk-stat-box">
+                    <div class="disk-stat-num" id="disk-total-seek">208 cyl</div>
+                    <div class="disk-stat-label">Total Head Seek Movement</div>
+                  </div>
+
+                  <div class="disk-stat-box">
+                    <div class="disk-stat-num" id="disk-avg-seek">29.7 cyl</div>
+                    <div class="disk-stat-label">Average Seek Time</div>
+                  </div>
+
+                  <div class="disk-stat-box" style="text-align: left;">
+                    <div class="disk-stat-label" style="margin-bottom: 4px;">Executed Seek Traversal:</div>
+                    <div id="disk-seq-output" style="font-family: var(--font-mono); font-size: 0.78rem; color: #fff; line-height: 1.4; word-break: break-all;">
+                      50 ➔ 43 ➔ 24 ➔ 16 ➔ 82 ➔ 140 ➔ 170 ➔ 190
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 3: CYBERSHIELD AI THREAT SCANNER -->
+          <div class="lab-panel" id="lab-cybershield">
+            <div class="ai-sim-container">
+              
+              <div class="ai-query-col">
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase;">
+                  Sample Security Test Queries (Click to test):
+                </div>
+
+                <div class="sample-prompts-list">
+                  <button class="sample-prompt-pill" data-type="phishing">
+                    🎣 <strong>Phishing Detection:</strong> "Urgent: Your account is locked! Click http://paypa1-security.xyz/login immediately"
+                  </button>
+                  <button class="sample-prompt-pill" data-type="iam">
+                    ☁️ <strong>AWS IAM Hardening:</strong> "How to structure least-privilege policies for Boto3 S3 pipelines?"
+                  </button>
+                  <button class="sample-prompt-pill" data-type="password">
+                    🔑 <strong>Password Entropy:</strong> "Audit strength: Pass123! vs Kx9#mQ$8vL2!pZ"
+                  </button>
+                  <button class="sample-prompt-pill" data-type="disk">
+                    ⚙️ <strong>OS Kernel Security:</strong> "How do unhandled request queues impact disk starvation & availability?"
+                  </button>
+                </div>
+
+                <div class="form-group" style="margin-top: 10px;">
+                  <label class="form-label">Or Submit Custom Security Query:</label>
+                  <div style="display: flex; gap: 8px;">
+                    <input type="text" id="ai-query-input" class="form-input" placeholder="Type cybersecurity query (e.g., phishing, IAM, passwords)...">
+                    <button class="btn-primary-glow" id="ai-submit-btn">
+                      <span>Scan</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ai-output-terminal">
+                <div class="terminal-badge-bar">
+                  <div class="engine-pill">GROQ CLOUD • LLAMA-3.1 70B FAST INFERENCE</div>
+                  <div id="threat-level-badge" class="threat-level-badge critical">CRITICAL THREAT</div>
+                </div>
+
+                <pre class="ai-stream-content" id="ai-stream-content">[READY] CyberShield Threat Engine online. Select a sample prompt above or enter a query to initiate real-time AI security audit.</pre>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECHNICAL SKILLS MATRIX
+         ========================================== -->
+    <section class="section-wrapper" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Mastery & Toolkit</div>
+          <h2 class="section-title">Technical Skills & Competencies</h2>
+          <p class="section-subtitle">
+            Demonstrated hands-on expertise spanning cloud platforms, systems infrastructure, cybersecurity tooling, and full-stack software development.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & Infrastructure</button>
+          <button class="filter-btn" data-filter="security">Security & Ethical Hacking</button>
+          <button class="filter-btn" data-filter="languages">Languages & Backend</button>
+          <button class="filter-btn" data-filter="tools">DevOps & Tools</button>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Cloud Skills -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Amazon Web Services (AWS)</h4>
+              </div>
+              <span class="skill-badge-level">Production</span>
+            </div>
+            <p class="skill-description">EC2, S3, IAM Security Policies, VPC Networking, RDS, Lambda serverless, and Boto3 Python automation.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">AWS S3 Lifecycle & Boto3</h4>
+              </div>
+              <span class="skill-badge-level">Advanced</span>
+            </div>
+            <p class="skill-description">Storage class transitions (Standard ➔ Glacier), versioning management, rollbacks, and bucket cost analysis.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Apache CloudStack</h4>
+              </div>
+              <span class="skill-badge-level">Practical</span>
+            </div>
+            <p class="skill-description">Open-source cloud computing software for creating, managing, and deploying infrastructure cloud services.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 78%;"></div></div>
+          </div>
+
+          <!-- Security Skills -->
+          <div class="skill-card" data-category="security">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Ethical Hacking & Threat Defense</h4>
+              </div>
+              <span class="skill-badge-level">Academic Major</span>
+            </div>
+            <p class="skill-description">Vulnerability assessment, phishing pattern detection, attack vector isolation, and security hygiene auditing.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="security">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">AWS IAM & Access Control</h4>
+              </div>
+              <span class="skill-badge-level">Certified</span>
+            </div>
+            <p class="skill-description">Principle of least privilege (PoLP), role-based permissions, cross-account policies, and credential security.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 89%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="security">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">AI-Assisted Security (LLMs)</h4>
+              </div>
+              <span class="skill-badge-level">Implemented</span>
+            </div>
+            <p class="skill-description">Integrating Groq LLaMA 3.1 LLM endpoints for rapid threat classification and remediation advice.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- Languages & Backend -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Python</h4>
+              </div>
+              <span class="skill-badge-level">Primary</span>
+            </div>
+            <p class="skill-description">Backend API development, AWS SDK automation, algorithm design, data transformation, and test suites.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">C++</h4>
+              </div>
+              <span class="skill-badge-level">Proficient</span>
+            </div>
+            <p class="skill-description">Data structures, pointer arithmetic, memory management, and competitive algorithmic problem solving.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 86%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Flask & REST APIs</h4>
+              </div>
+              <span class="skill-badge-level">Production</span>
+            </div>
+            <p class="skill-description">Lightweight microservices, route handling, request serialization, JWT/Session handling, and CORS management.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">SQL & MySQL</h4>
+              </div>
+              <span class="skill-badge-level">Certified</span>
+            </div>
+            <p class="skill-description">Relational database modeling, query optimization, indexing, ACID transactions, and integrity constraints.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Docker Containerization</h4>
+              </div>
+              <span class="skill-badge-level">Certified</span>
+            </div>
+            <p class="skill-description">Multi-stage Dockerfiles, image minimization, environment isolation, container networking, and deployment.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 84%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Linux / Ubuntu OS</h4>
+              </div>
+              <span class="skill-badge-level">Daily Driver</span>
+            </div>
+            <p class="skill-description">Bash scripting, systemctl process management, permission management, cron schedules, and SSH tunnels.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-name-wrap">
+                <div class="skill-bullet"></div>
+                <h4 class="skill-title">Git, GitHub & CI/CD</h4>
+              </div>
+              <span class="skill-badge-level">Daily</span>
+            </div>
+            <p class="skill-description">Branch management, pull request reviews, automated CI/CD deployment pipelines on GitHub Pages and Render.</p>
+            <div class="skill-meter-wrap"><div class="skill-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE & EDUCATION TIMELINE
+         ========================================== -->
+    <section class="section-wrapper" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Career & Education</div>
+          <h2 class="section-title">Experience & Academic Milestones</h2>
+          <p class="section-subtitle">
+            Professional internships, core computer science engineering coursework, and verified credentials.
+          </p>
+        </div>
+
+        <div class="experience-layout">
+          
+          <!-- Column 1: Industry Experience -->
+          <div class="timeline-column">
+            <div class="col-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>Work Experience & Internships</span>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-period">JUNE 2026 – JULY 2026</div>
+              <h3 class="timeline-org">CloudCraft</h3>
+              <div class="timeline-role">Cloud Computing & DevOps Intern</div>
+              <ul class="timeline-points">
+                <li>Completed rigorous hands-on internship focused on AWS cloud architecture, application deployment, and infrastructure storage optimization.</li>
+                <li>Developed <strong>SkyDeploy</strong>: full-stack AWS S3 cost optimizer utilizing Python, Flask, Boto3, and Amazon S3; implemented automated policy optimization saving cloud storage spend.</li>
+                <li>Engineered 5-metric cost dashboard tracking file counts, storage consumed, active versions, monthly spend, and projected savings.</li>
+                <li>Successfully defended implementation in the internship viva, demonstrating deep knowledge of AWS architecture, S3 versioning, and IAM security.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2: Academic Journey -->
+          <div class="timeline-column">
+            <div class="col-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Education</span>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-period">JULY 2024 – PRESENT</div>
+              <h3 class="timeline-org">Lovely Professional University (LPU)</h3>
+              <div class="timeline-role">Bachelor of Technology (B.Tech) in CSE • Phagwara, Punjab</div>
+              <div style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 8px;">
+                Core CSE Discipline • Versatile & Open For All Software Domains
+              </div>
+              <div class="score-badge">CGPA: 7.95 / 10.0</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-period">MAY 2024</div>
+              <h3 class="timeline-org">SreeVidya Junior College</h3>
+              <div class="timeline-role">Intermediate (MPC) • Proddatur, Andhra Pradesh</div>
+              <div class="score-badge">Percentage: 90.0%</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-period">APRIL 2022</div>
+              <h3 class="timeline-org">Jeevan Jyothi High School</h3>
+              <div class="timeline-role">Secondary School Certificate (SSC) • Proddatur, Andhra Pradesh</div>
+              <div class="score-badge">Percentage: 87.0%</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certifications Showcase -->
+        <div class="certifications-section">
+          <div class="col-heading" style="margin-top: 40px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <span>Industry Certifications & Accreditations</span>
+          </div>
+
+          <div class="certs-grid">
+            <div class="cert-card">
+              <div>
+                <div class="cert-issuer">AWS Academy</div>
+                <h4 class="cert-name">AWS Academy Cloud Practitioner</h4>
+              </div>
+              <div class="cert-date">📅 Issued: May 2026</div>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-issuer">GeeksforGeeks</div>
+                <h4 class="cert-name">DevOps Professional Certification</h4>
+              </div>
+              <div class="cert-date">📅 Issued: July 2026</div>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-issuer">Infosys Springboard</div>
+                <h4 class="cert-name">C++ Fundamentals</h4>
+              </div>
+              <div class="cert-date">📅 Issued: August 2025</div>
+            </div>
+
+            <div class="cert-card">
+              <div>
+                <div class="cert-issuer">Infosys Springboard</div>
+                <h4 class="cert-name">SQL Essentials</h4>
+              </div>
+              <div class="cert-date">📅 Issued: August 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT & INQUIRIES HUB
+         ========================================== -->
+    <section class="section-wrapper" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Get in Touch</div>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">
+            I am actively seeking software engineering, cloud architecture, backend, full-stack, and systems roles where I can deliver measurable impact.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels -->
+          <div class="contact-info-card">
+            
+            <div class="contact-channel-item">
+              <div class="contact-channel-left">
+                <div class="contact-icon-box">✉️</div>
+                <div>
+                  <div class="contact-label">Email Coordinate</div>
+                  <div class="contact-value">rehamandudekula77@gmail.com</div>
+                </div>
+              </div>
+              <button class="copy-mini-btn copy-trigger" data-copy="rehamandudekula77@gmail.com" title="Copy Email">Copy</button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-left">
+                <div class="contact-icon-box">📞</div>
+                <div>
+                  <div class="contact-label">Direct Phone</div>
+                  <div class="contact-value">+91 8688803746</div>
+                </div>
+              </div>
+              <button class="copy-mini-btn copy-trigger" data-copy="+918688803746" title="Copy Phone">Copy</button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-left">
+                <div class="contact-icon-box">💼</div>
+                <div>
+                  <div class="contact-label">Professional Network</div>
+                  <div class="contact-value">linkedin.com/in/dudekula-rehaman-523788321</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/dudekula-rehaman-523788321/" target="_blank" class="copy-mini-btn">Open</a>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-left">
+                <div class="contact-icon-box">💻</div>
+                <div>
+                  <div class="contact-label">GitHub Codebase</div>
+                  <div class="contact-value">github.com/dudekularehaman2006</div>
+                </div>
+              </div>
+              <a href="https://github.com/dudekularehaman2006" target="_blank" class="copy-mini-btn">Open</a>
+            </div>
+
+            <!-- Resume Download Box inside Contact -->
+            <div style="background: rgba(0, 245, 212, 0.06); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+              <div style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--primary-glow); font-weight: 700;">
+                OFFICIAL RESUME REPOSITORY:
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="https://drive.google.com/uc?export=download&id=1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x" target="_blank" class="btn-primary-glow" style="flex: 1; font-size: 0.85rem; justify-content: center; padding: 10px;">
+                  <span>⬇️ Quick Download PDF</span>
+                </a>
+                <button class="btn-outline-glow" id="copy-resume-link-btn" style="font-size: 0.85rem; padding: 10px;">
+                  <span>📋 Copy Drive Link</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Message Dispatch Box -->
+          <div class="contact-form-box">
+            <h3 style="font-size: 1.35rem; margin-bottom: 20px;">Transmit Encrypted Dispatch</h3>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label">Your Name / Organization</label>
+                <input type="text" id="c-name" class="form-input" placeholder="e.g. Satya Nadella / Hiring Team" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Contact Email Address</label>
+                <input type="email" id="c-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Message Payload</label>
+                <textarea id="c-msg" class="form-textarea" placeholder="Discussing software engineering roles, cloud architecture, or systems development..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-glow" style="width: 100%; justify-content: center; padding: 14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Transmit Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-credits">
+        Designed & Built by <span>Dudekula Rehaman</span> • Core Computer Science & Engineering (CSE)
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); display: flex; gap: 16px;">
+        <span>Press <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 3px; color: #fff;">~</kbd> for Terminal</span>
+        <span>Hosted via Zero-Build Architecture</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING CYBER TERMINAL MODAL
+       ========================================== -->
+  <div class="terminal-overlay" id="terminal-overlay">
+    <div class="terminal-window">
+      <div class="terminal-crt-scanline"></div>
+      
+      <div class="terminal-topbar">
+        <div class="terminal-controls">
+          <button class="term-btn close" id="term-close-btn"></button>
+          <button class="term-btn minimize"></button>
+          <button class="term-btn maximize"></button>
+        </div>
+        <div class="term-title">
+          <span>rehaman@cyber-terminal</span>: ~ (bash 5.2)
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim);">ESC to exit</div>
+      </div>
+
+      <div class="terminal-body" id="term-body">
+        <div class="term-welcome-msg">
+          * Welcome to Dudekula Rehaman's Cyber Terminal CLI v2.4<br>
+          * Type <span style="color: var(--primary-glow); font-weight: 700;">help</span> to list commands, or <span style="color: var(--primary-glow); font-weight: 700;">whoami</span>, <span style="color: var(--primary-glow); font-weight: 700;">skills</span>, <span style="color: var(--primary-glow); font-weight: 700;">projects</span>, <span style="color: var(--primary-glow); font-weight: 700;">matrix</span>, <span style="color: var(--primary-glow); font-weight: 700;">resume</span>.
+        </div>
+        <div class="term-history" id="term-history"></div>
+
+        <div class="term-prompt-row">
+          <span class="term-prompt-label">rehaman@cyber-terminal:~$</span>
+          <input type="text" class="term-input" id="term-input" autofocus autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       ARCHITECTURE DEEP DIVE MODAL
+       ========================================== -->
+  <div class="deepdive-modal-overlay" id="deepdive-modal-overlay">
+    <div class="deepdive-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="modal-project-title">Project Architecture Deep Dive</h3>
+          <div class="modal-subtitle" id="modal-project-sub">System Architecture & Engineering Metrics</div>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" title="Close Modal">✕</button>
+      </div>
+
+      <div class="modal-content-body">
+        <!-- Flow Diagram -->
+        <div class="arch-diagram-card">
+          <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-dim); margin-bottom: 10px; text-transform: uppercase;">
+            Pipeline & Component Flow
+          </div>
+          <div class="arch-flow-diagram" id="modal-flow-diagram"></div>
+        </div>
+
+        <div>
+          <div class="deepdive-section-heading">⚡ Problem Statement & Challenge</div>
+          <p class="deepdive-text" id="modal-problem-desc"></p>
+        </div>
+
+        <div>
+          <div class="deepdive-section-heading">🛠️ Solution & Architecture Implementation</div>
+          <p class="deepdive-text" id="modal-solution-desc"></p>
+        </div>
+
+        <div>
+          <div class="deepdive-section-heading">📊 Key Impact & Engineering Metrics</div>
+          <div class="deepdive-grid-stats" id="modal-metrics-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/sound-effects.js"></script>
+  <script src="assets/js/particle-canvas.js"></script>
+  <script src="assets/js/interactive-terminal.js"></script>
+  <script src="assets/js/simulators.js"></script>
+  <script src="assets/js/project-modals.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
