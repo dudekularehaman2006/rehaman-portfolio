@@ -1,8 +1,21 @@
-# 🚀 Dudekula Rehaman — Top-Tier Interactive Engineering Portfolio
+# 🚀 Dudekula Rehaman — Interactive Engineering Portfolio
 
-> **Core Computer Science & Engineering • Cloud & DevOps Architecture • Full-Stack Systems • Open For All Roles**
+> **Computer Science & Engineering • Cloud Computing • DevOps • Software Engineering • Open to Opportunities**
 
-An elite, high-performance personal portfolio built for **Dudekula Rehaman**. Designed with a futuristic cyberpunk glassmorphism aesthetic, Web Audio API micro-sound synthesis, 3D hologram physics, an interactive CLI terminal, and **3 live playable engineering simulators** directly demonstrating core projects.
+An interactive personal engineering portfolio built for **Dudekula Rehaman**, combining a futuristic cyber-inspired interface with hands-on technical demonstrations.
+
+The portfolio goes beyond a traditional resume website by including **interactive engineering simulators, a browser-based CLI terminal, cloud cost optimization concepts, algorithm visualizations, cybersecurity demonstrations, 3D UI interactions, and responsive frontend engineering.**
+
+---
+
+## 🌐 Live Portfolio
+
+### 🔗 [https://rehaman-portfolio.vercel.app/](https://rehaman-portfolio.vercel.app/)
+
+The portfolio is deployed on **Vercel** and connected to the GitHub repository for continuous deployment.
+
+**Source Code:**  
+[https://github.com/dudekularehaman2006/rehaman-portfolio](https://github.com/dudekularehaman2006/rehaman-portfolio)
 
 ---
 
@@ -11,87 +24,431 @@ An elite, high-performance personal portfolio built for **Dudekula Rehaman**. De
 ```text
 rehaman-portfolio/
 │
-├── index.html                   # Complete semantic, accessible, SEO-optimized application
-├── README.md                    # Project documentation & live deployment guide
+├── index.html                   # Main portfolio application
+├── README.md                    # Project documentation
 │
 └── assets/
     ├── css/
-    │   ├── main.css             # Design tokens, variables, typography, layouts
-    │   ├── cyber-theme.css      # Hologram ID badge, HUD counters, philosophy cards
-    │   ├── interactive-labs.css # Styling for the 3 live playable simulators
-    │   └── terminal.css         # CRT monitor, matrix rain & architecture modal
+    │   ├── main.css             # Main design system, layouts and responsive styles
+    │   ├── cyber-theme.css      # Cyber-themed UI components and visual effects
+    │   ├── interactive-labs.css # Interactive engineering simulator styles
+    │   └── terminal.css         # Terminal interface and matrix effects
     │
     └── js/
-        ├── sound-effects.js     # Web Audio API sound synthesizer (zero external dependencies)
-        ├── particle-canvas.js   # Interactive particle physics constellation grid
-        ├── interactive-terminal.js # Fully functional Bash CLI simulator with hotkeys & matrix rain
-        ├── simulators.js        # Real-time logic for the 3 playable engineering testbeds
-        ├── project-modals.js    # Architectural deep-dive modals & toast notification engine
-        └── main.js              # Typewriter hero, 3D tilt, theme switcher & form handling
+        ├── sound-effects.js        # Native Web Audio API sound effects
+        ├── particle-canvas.js      # Interactive particle background
+        ├── interactive-terminal.js # Browser-based CLI terminal
+        ├── simulators.js            # Interactive engineering simulators
+        ├── project-modals.js        # Project information modals
+        └── main.js                  # Main UI logic, animations and interactions
 ```
 
 ---
 
-## ⚡ Key Interactive Features & Highlights
+# ⚡ Key Interactive Features
 
-1. **3 Live Playable Engineering Simulators (Interactive Labs)**:
-   - ☁️ **SkyDeploy AWS S3 Cost Optimizer Simulator**: Interactive sliders for storage volume, version counts, and retention days. Real-time cost comparison between S3 Standard vs Glacier Lifecycle tiering with live calculated annual savings and exportable AWS Boto3 lifecycle JSON policy.
-   - 💿 **Advanced Disk Scheduling Algorithm Visualizer**: Customizable disk cylinders (0–199) and request queue. Interactive algorithm switcher (FCFS, SSTF, SCAN, C-SCAN) animating seek head movement on an HTML5 canvas while computing total seek time and throughput.
-   - 🛡️ **CyberShield AI Threat Scanner Simulator**: Interactive security prompt tester powered by simulated Groq LLaMA 3.1 ultra-fast inference, evaluating phishing URLs, AWS IAM least-privilege policies, and password entropy.
+## 1. ☁️ SkyDeploy — AWS S3 Cost Optimizer Simulator
 
-2. **Interactive CLI Terminal (Command Center)**:
-   - Accessible via the top navbar button or pressing `~` (tilde) on the keyboard.
-   - Real command parser supporting `help`, `whoami`, `skills`, `projects`, `project <id>`, `matrix`, `resume`, `certs`, `contact`, `theme <name>`, `sudo hire`, and `clear`.
-   - Includes full terminal history (Up/Down arrow navigation) and Tab auto-completion.
-   - **Easter Egg**: Typing `matrix` triggers an animated falling green digital code rain across the entire screen!
+An interactive cloud cost optimization simulator demonstrating how AWS S3 lifecycle policies can reduce storage costs.
 
-3. **3D Interactive Hologram ID Badge**:
-   - Responds to mouse movement with authentic 3D perspective tilt and dynamic specular light reflection.
-   - Displays Rehaman's academic credentials, CGPA (7.95), CloudCraft internship, and Core Computer Science & Engineering degree.
+### Features
 
-4. **Web Audio Synthesizer (Zero Assets / 100% Native)**:
-   - Dynamic futuristic sound effects generated via native browser Web Audio API oscillators.
-   - Interactive sound toggle button (`🔊 / 🔇`) with persistence in `localStorage`.
+- Interactive storage volume configuration
+- Object version count configuration
+- Retention period controls
+- S3 Standard vs Glacier cost comparison
+- Estimated annual savings calculation
+- AWS Boto3 lifecycle policy generation
+- Interactive cost analysis
 
-5. **Direct Downloadable Resume**:
-   - Configured with Google Drive direct download URL:
-     - Direct Download: `https://drive.google.com/uc?export=download&id=1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x`
-     - Drive Document Viewer: `https://drive.google.com/file/d/1_aTO5HzmB3VFalkCwZp41Kcx_EbTfN6x/view?usp=sharing`
-   - One-click copy button with toast notification.
+### Concepts Demonstrated
 
-6. **"How I Think" Engineering Philosophy**:
-   - Explains Rehaman's mental models: Zero-Trust Security by Design, Cost-Engineered Cloud Architecture, Algorithmic Rigor (\(O(n \log n)\)), and Decoupled Resilience.
-
-7. **Theme Engine**:
-   - Seamless one-click switching between **Cyber Cyan**, **Matrix Emerald**, and **Electric Violet**.
+`AWS S3` · `Lifecycle Policies` · `Cloud Cost Optimization` · `Boto3`
 
 ---
 
-## 🌐 How to Preview & Make It Live
+## 2. 💿 Disk Scheduling Algorithm Visualizer
 
-### Instant Local Preview:
-1. Open the project folder:
-   `C:\Users\reham\.gemini\antigravity\scratch\rehaman-portfolio`
-2. Simply double-click **`index.html`** in any web browser (Chrome, Edge, Firefox, Brave).
-   - Zero installation or build commands required!
+An interactive visualization of operating-system disk scheduling algorithms.
 
-### Making It Live on the Internet (Free, 100% Instant):
+### Supported Algorithms
 
-#### Option A: GitHub Pages (Recommended)
-1. Initialize a Git repository in `rehaman-portfolio` or create a new repo on your GitHub account (`dudekularehaman2006`).
-2. Push all the files into the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Launch elite portfolio"
-   git branch -M main
-   git remote add origin https://github.com/dudekularehaman2006/portfolio.git
-   git push -u origin main
-   ```
-3. Go to your repo **Settings** ➔ **Pages** ➔ Source: **Deploy from a branch** ➔ Select `main` / `root` ➔ Click **Save**.
-4. Your site will be live instantly at:
-   `https://dudekularehaman2006.github.io/portfolio/`
+- FCFS — First Come First Serve
+- SSTF — Shortest Seek Time First
+- SCAN
+- C-SCAN
 
-#### Option B: Netlify or Vercel
-1. Drag and drop the `rehaman-portfolio` folder directly into [Netlify Drop](https://app.netlify.com/drop) or [Vercel](https://vercel.com).
-2. It goes live with a custom URL and free SSL in under 30 seconds!
+The simulator allows users to configure disk requests and visualize disk-head movement using an HTML5 Canvas while calculating seek-related performance metrics.
+
+### Concepts Demonstrated
+
+`Data Structures` · `Algorithms` · `Operating Systems` · `HTML5 Canvas` · `Algorithm Visualization`
+
+---
+
+## 3. 🛡️ CyberShield AI — Threat Scanner Simulator
+
+An interactive cybersecurity demonstration covering common security-analysis scenarios.
+
+### Demonstrations
+
+- Phishing URL analysis
+- AWS IAM policy analysis
+- Password entropy evaluation
+- Security-oriented prompt testing
+
+### Concepts Demonstrated
+
+`Cybersecurity` · `AWS IAM` · `Threat Analysis` · `Password Security` · `AI-assisted Security`
+
+---
+
+# 🖥️ Interactive CLI Terminal
+
+The portfolio includes a browser-based command-line interface designed to simulate a developer terminal.
+
+### Available Commands
+
+```text
+help
+whoami
+skills
+projects
+project <id>
+matrix
+resume
+certs
+contact
+theme <name>
+sudo hire
+clear
+```
+
+### Terminal Features
+
+- Command parser
+- Command history
+- Up/Down arrow navigation
+- Tab auto-completion
+- Keyboard interaction
+- Project exploration
+- Resume access
+- Theme switching
+- Matrix-style visual effect
+
+### 🟢 Easter Egg
+
+Try:
+
+```text
+matrix
+```
+
+to activate the animated digital-code effect.
+
+---
+
+# 🪪 3D Interactive Hologram ID Card
+
+The portfolio includes an interactive 3D identity card that responds to mouse movement.
+
+### Features
+
+- Perspective-based 3D tilt
+- Dynamic lighting effects
+- Interactive mouse tracking
+- Academic information
+- Engineering profile information
+
+The component demonstrates frontend interaction using CSS transformations and JavaScript.
+
+---
+
+# 🔊 Web Audio Synthesizer
+
+The interface includes lightweight futuristic sound effects generated directly through the browser's **Web Audio API**.
+
+### Features
+
+- Native browser audio synthesis
+- No external audio assets required
+- Interactive sound toggle
+- Persistent sound preference using `localStorage`
+
+---
+
+# 📄 Resume Integration
+
+The portfolio includes direct access to the current resume through the Resume section.
+
+Users can view or download the resume directly from the portfolio.
+
+> Resume access is provided through the portfolio's dedicated Resume section.
+
+---
+
+# 🧠 Engineering Philosophy
+
+The portfolio also presents several engineering principles that guide the projects and technical work:
+
+### 🔐 Security by Design
+
+Considering security requirements while designing systems instead of treating security as an afterthought.
+
+### ☁️ Cost-Aware Cloud Architecture
+
+Designing cloud systems with attention to resource usage, scalability, reliability, and operational cost.
+
+### 🧮 Algorithmic Rigor
+
+Understanding the computational complexity and trade-offs behind algorithms rather than treating them as black boxes.
+
+### 🔗 Decoupled Systems
+
+Designing components with clear responsibilities and interfaces to improve maintainability and scalability.
+
+---
+
+# 🎨 Theme Engine
+
+The portfolio supports multiple visual themes:
+
+- 🔵 Cyber Cyan
+- 🟢 Matrix Emerald
+- 🟣 Electric Violet
+
+The theme system provides a different visual experience while maintaining the same underlying application structure.
+
+---
+
+# 🛠️ Technology Stack
+
+| Technology | Usage |
+|---|---|
+| HTML5 | Semantic structure and application markup |
+| CSS3 | Responsive layouts, animations and visual design |
+| JavaScript | Application logic and interactivity |
+| HTML5 Canvas | Algorithm and particle visualizations |
+| Web Audio API | Browser-generated sound effects |
+| LocalStorage | Client-side preference persistence |
+| Git | Version control |
+| GitHub | Source code management |
+| Vercel | Production deployment |
+
+---
+
+# 📊 Engineering Areas Demonstrated
+
+This portfolio combines concepts from multiple areas of Computer Science:
+
+```text
+Cloud Computing
+      │
+      ├── AWS S3
+      ├── Cloud Cost Optimization
+      └── IAM Concepts
+           
+DevOps
+      │
+      ├── Git
+      ├── GitHub
+      └── Continuous Deployment
+
+Software Engineering
+      │
+      ├── JavaScript
+      ├── Responsive UI
+      ├── Modular Assets
+      └── Browser APIs
+
+Computer Science
+      │
+      ├── Data Structures
+      ├── Algorithms
+      └── Operating Systems
+
+Security
+      │
+      ├── IAM
+      ├── Threat Analysis
+      └── Password Security
+```
+
+---
+
+# 📁 Project Architecture
+
+The project follows a lightweight static frontend architecture.
+
+```text
+                    ┌─────────────────────┐
+                    │      index.html     │
+                    │   Portfolio UI      │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                │              │              │
+                ▼              ▼              ▼
+          ┌──────────┐   ┌──────────┐   ┌────────────┐
+          │   CSS    │   │    JS    │   │   Canvas   │
+          │ Styling  │   │ Logic    │   │ Visuals    │
+          └──────────┘   └──────────┘   └────────────┘
+                │              │              │
+                └──────────────┼──────────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │     Web Browser     │
+                    └─────────────────────┘
+```
+
+---
+
+# ⚡ Run Locally
+
+This is a static frontend project and does **not** require Node.js, npm, Maven, or a backend server.
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/dudekularehaman2006/rehaman-portfolio.git
+```
+
+## Enter the Project
+
+```bash
+cd rehaman-portfolio
+```
+
+## Option 1 — Open Directly
+
+Open:
+
+```text
+index.html
+```
+
+in a modern browser.
+
+## Option 2 — Run a Local Server
+
+If Python is installed:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+---
+
+# 🚀 Production Deployment
+
+The portfolio is deployed using **Vercel**.
+
+### Deployment Architecture
+
+```text
+┌─────────────────────┐
+│   Local Development │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│        Git          │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│       GitHub        │
+│  Source Repository  │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│       Vercel        │
+│ Continuous Deploy   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Production Website  │
+└─────────────────────┘
+```
+
+### Production URL
+
+🔗 **[https://rehaman-portfolio.vercel.app/](https://rehaman-portfolio.vercel.app/)**
+
+### Repository
+
+🔗 **[https://github.com/dudekularehaman2006/rehaman-portfolio](https://github.com/dudekularehaman2006/rehaman-portfolio)**
+
+---
+
+# 🔄 Continuous Deployment
+
+The GitHub repository is connected to Vercel.
+
+Whenever changes are pushed to the `main` branch:
+
+```text
+git add .
+      ↓
+git commit
+      ↓
+git push
+      ↓
+GitHub
+      ↓
+Vercel
+      ↓
+New Production Deployment
+```
+
+This allows the live portfolio to stay synchronized with the GitHub repository.
+
+---
+
+# 🎯 Project Goals
+
+The primary goal of this project is to create a portfolio that demonstrates technical ability through **working interactive experiences**, rather than relying only on written descriptions.
+
+The project focuses on:
+
+- Building interactive web experiences
+- Demonstrating Computer Science concepts
+- Showcasing cloud and DevOps interests
+- Presenting engineering projects
+- Practicing frontend architecture
+- Using Git and GitHub effectively
+- Deploying a production website
+- Maintaining a continuously deployable project
+
+---
+
+# 📌 Quick Links
+
+| Resource | Link |
+|---|---|
+| 🌐 Live Portfolio | [rehaman-portfolio.vercel.app](https://rehaman-portfolio.vercel.app/) |
+| 💻 GitHub Repository | [rehaman-portfolio](https://github.com/dudekularehaman2006/rehaman-portfolio) |
+
+---
+
+# 👨‍💻 Author
+
+**Dudekula Rehaman**
+
+Computer Science & Engineering Student
+
+Interested in:
+
+`Cloud Computing` · `DevOps` · `AWS` · `Linux` · `Software Engineering`
+
+---
+
+> **Build. Understand. Demonstrate. Deploy.**
